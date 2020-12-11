@@ -39,7 +39,7 @@ export default new Vuex.Store({
     joinRoom({ commit }, data) {
       return new Promise(async (resolve, reject) => {
         try {
-          const { body } = await Vue.http.post(`https://https://reverent-babbage-6fc2e7.netlify.app/auth/login`, data)
+          const { body } = await Vue.http.post(`reverent-babbage-6fc2e7.netlify.app/auth/login`, data)
           if (body.code === 400 || body.code === 401 || body.code === 500) {
             reject({ message: body.message })
           }
