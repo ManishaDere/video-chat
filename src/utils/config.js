@@ -1,5 +1,5 @@
-export const url = `${process.env.VUE_APP_SOCKET_HOST || 'http://localhost'}:${process.env.VUE_APP_SOCKET_PORT || '3000'}`
-
+// export const url = `${process.env.VUE_APP_SOCKET_HOST || 'http://localhost'}:${process.env.VUE_APP_SOCKET_PORT || '3000'}`
+export const url = 'https://video-chat-webrtc-app.netlify.app/#/';
 export const STORE_ACTIONS = {
     joinRoom: 'joinRoom',
     setRooms: 'setRooms',
